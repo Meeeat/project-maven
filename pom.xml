@@ -13,7 +13,20 @@
         <maven.compiler.target>18</maven.compiler.target>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Github Nik-Efr Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Nik-Efr/project-maven</url>
+        </repository>
+    </distributionManagement>
+
     <repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Nik-Efr/desktop-game-engine-1.0</url>
+        </repository>
+
         <repository>
             <id>local-repo</id>
             <url>file://${project.basedir}/local-repo</url>
@@ -37,6 +50,8 @@
             <groupId>com.javarush</groupId>
             <artifactId>desktop-game-engine</artifactId>
             <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/desktop-game-engine.jar</systemPath>
         </dependency>
 
         <dependency>
