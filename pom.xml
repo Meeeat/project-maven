@@ -108,7 +108,7 @@
                         </manifest>
                         <manifestEntries>
                             <Rsrc-Main-Class>com.javarush.games.racer.RacerGame</Rsrc-Main-Class>
-                            <Class-Path>./</Class-Path>
+                            <Class-Path>./ lib/desktop-game-engine-1.0.jar</Class-Path>
                         </manifestEntries>
                     </archive>
                 </configuration>
